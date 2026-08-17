@@ -34,10 +34,37 @@ export const Connectivity: FC<Props> = ({ name }) => (
             className="w-full h-auto object-cover"
           />
         </div>
+                <div className="flex justify-center mt-12">
+          <button
+            className="
+      group
+      flex items-center gap-2
+      rounded-lg
+      border border-gray-700
+      px-6 py-3
+      text-sm font-medium text-white
+      cursor-pointer
+      transition-all duration-300 ease-out
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-white
+      hover:bg-white
+      hover:text-black
+      hover:shadow-xl
+      active:scale-95
+    "
+          >
+            <span>Explore Integrations</span>
 
-        <div className="mt-12">
-          <button className="border border-white/20 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
-            Explore Integrations →
+            <span
+              className="
+        inline-block
+        transition-transform duration-300
+        group-hover:translate-x-1
+      "
+            >
+              →
+            </span>
           </button>
         </div>
 

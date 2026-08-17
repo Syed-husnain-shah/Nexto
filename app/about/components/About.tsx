@@ -8,8 +8,8 @@ type Props = {
 export const About: FC<Props> = ({ name }) => (
   <section className="mx-auto max-w-334">
     <div className="flex flex-col items-center justify-center text-center mt-20 ">
-      <p className="uppercase border border-gray-700 text-[12px] font-normal w-30 text-center rounded-full">
-        our story
+      <p className="text-center text-[15px] font-normal leading-9 mx-auto uppercase border border-gray-700 w-40 rounded-full">
+        Our Story
       </p>
       <h1 className="text-[38px] font-medium ">About us</h1>
     </div>

@@ -32,20 +32,40 @@ export const Discover: FC<Props> = () => (
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-snug">
           Discover the Right Plan for Your Unique Needs
         </h1>
+        <div className="flex justify-center mt-12">
+          <button
+            className="
+      group
+      flex items-center gap-2
+      rounded-lg
+      border border-gray-700
+      px-6 py-3
+      text-sm font-medium text-white
+      cursor-pointer
+      transition-all duration-300 ease-out
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-white
+      hover:bg-white
+      hover:text-black
+      hover:shadow-xl
+      active:scale-95
+    "
+          >
+            <span>Start Your Plan</span>
 
-        <button className="
-          mt-6 
-          border border-gray-700 
-          px-6 py-3 
-          rounded-md 
-          flex items-center gap-2 
-          mx-auto lg:mx-0
-          hover:bg-white hover:text-black 
-          transition
-        ">
-          Start Your Plan
-          <IoMdArrowForward className="w-5 h-5" />
-        </button>
+            <span
+              className="
+        inline-block
+        transition-transform duration-300
+        group-hover:translate-x-1
+      "
+            >
+              →
+            </span>
+          </button>
+        </div>
+        
       </div>
 
       <div className="lg:w-1/2 w-full border border-gray-700 rounded-lg p-6 md:p-10">
@@ -70,17 +90,29 @@ export const Discover: FC<Props> = () => (
                 {plan.desc}
               </p>
 
-              <button className="
-                border border-gray-700 
-                px-4 py-2 
-                rounded-md 
-                text-sm 
-                hover:bg-white hover:text-black 
-                transition
-                w-fit
-              ">
-                Get Started
-              </button>
+              <div className="flex justify-center mt-12">
+                <button
+                  className="
+      group
+      flex items-center gap-2
+      rounded-lg
+      border border-gray-700
+      px-6 py-3
+      text-sm font-medium text-white
+      cursor-pointer
+      transition-all duration-300 ease-out
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-white
+      hover:bg-white
+      hover:text-black
+      hover:shadow-xl
+      active:scale-95
+    "
+                >
+                  <span>Get Started</span>
+                </button>
+              </div>
 
             </div>
           ))}

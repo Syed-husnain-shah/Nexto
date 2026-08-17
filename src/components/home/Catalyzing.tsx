@@ -6,43 +6,92 @@ type Props = {
 };
 
 export const Catalyzing: FC<Props> = ({ name }) => (
-  <section className="text-white py-16 px-6 lg:px-20">
-    <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <h1 className="text-4xl lg:text-3xl font-semibold leading-tight mb-6">
+  <section className="w-full overflow-hidden px-5 py-12 text-white sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24">
+    <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 sm:gap-12 md:grid-cols-2 md:gap-8 lg:gap-16">
+
+      <div className="w-full">
+        <h1 className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl">
           Catalyzing growth in web, design, and marketing excellence
         </h1>
 
-        <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-          Where seamless collaboration and strategic planning converge for unparalleled success. Your journey to digital success starts here, where every tool and feature serves as a catalyst for achieving & surpassing your goals.
+        <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-400 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
+          Where seamless collaboration and strategic planning converge for
+          unparalleled success. Your journey to digital success starts here,
+          where every tool and feature serves as a catalyst for achieving and
+          surpassing your goals.
         </p>
 
-        <button className="flex items-center gap-2 border border-gray-600 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300 cursor-pointer">
-          Explore More
-          <span>→</span>
-        </button>
+        <div className="mt-8 sm:mt-10">
+          <button
+            className="
+              group
+              flex
+              items-center
+              gap-2
+              rounded-lg
+              border
+              border-gray-700
+              px-5
+              py-3
+              text-sm
+              font-medium
+              text-white
+              transition-all
+              duration-300
+              ease-out
+              hover:-translate-y-1
+              hover:scale-[1.03]
+              hover:border-white
+              hover:bg-white
+              hover:text-black
+              hover:shadow-xl
+              active:scale-95
+              sm:px-6
+            "
+          >
+            <span>Explore More</span>
+
+            <span
+              className="
+                inline-block
+                transition-transform
+                duration-300
+                group-hover:translate-x-1
+              "
+            >
+              →
+            </span>
+          </button>
+        </div>
       </div>
 
-      <div className="relative bg-[#161B22] rounded-sm p-10">
-        <div className="-mb-10">
-          <Image
-            src="/image/catalyzing.jpg"
-            alt=""
-            height={200}
-            width={500}
-            className="relative "
-          />
-        </div>
-        <div>
-          <Image
-            src="/image/catalyzing-1.svg"
-            alt=""
-            height={200}
-            width={400}
-            className="absolute bottom-1 left-6  z-10 p-10"
-          />
+      <div className="mx-auto w-full max-w-2xl">
+        <div className="relative overflow-hidden rounded-2xl bg-[#161B22] p-4 sm:p-6 md:p-5 lg:p-8">
+
+          <div className="w-full">
+            <Image
+              src="/image/catalyzing.jpg"
+              alt="Catalyzing growth"
+              width={700}
+              height={450}
+              className="h-auto w-full rounded-xl object-cover"
+              priority
+            />
+          </div>
+
+          <div className="absolute bottom-3 left-3 z-10 w-28 sm:bottom-5 sm:left-5 sm:w-36 md:bottom-5 md:left-5 md:w-36 lg:bottom-6 lg:left-6 lg:w-44">
+            <Image
+              src="/image/catalyzing-1.svg"
+              alt="Catalyzing interface"
+              width={400}
+              height={250}
+              className="h-auto w-full rounded-lg shadow-2xl"
+            />
+          </div>
+
         </div>
       </div>
+
     </div>
   </section>
 );

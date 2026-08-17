@@ -91,9 +91,36 @@ export const Explore: FC<Props> = ({ name }) => (
         </div>
 
         <div className="flex justify-center mt-12">
-          <button className="border border-gray-700 px-6 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300 cursor-pointer flex items-center gap-2">
-            Get Started
-            <span>→</span>
+          <button
+            className="
+      group
+      flex items-center gap-2
+      rounded-lg
+      border border-gray-700
+      px-6 py-3
+      text-sm font-medium text-white
+      cursor-pointer
+      transition-all duration-300 ease-out
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-white
+      hover:bg-white
+      hover:text-black
+      hover:shadow-xl
+      active:scale-95
+    "
+          >
+            <span>Get Started</span>
+
+            <span
+              className="
+        inline-block
+        transition-transform duration-300
+        group-hover:translate-x-1
+      "
+            >
+              →
+            </span>
           </button>
         </div>
       </div>

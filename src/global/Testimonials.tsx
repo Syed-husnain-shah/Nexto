@@ -55,17 +55,15 @@ export default function Testimonials() {
   return (
     <section className="bg-[#030712] text-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <span className="text-xs tracking-widest border border-gray-700 px-4 py-1 rounded-full text-gray-400">
-          TESTIMONIALS
-        </span>
+        <p className="text-center text-[15px] font-normal leading-9 mx-auto uppercase border border-gray-700 w-45 rounded-full">
+          testimonials
+        </p>
 
-        <h2 className="text-4xl font-semibold mt-6">
-          Customer Reviews
-        </h2>
+        <h2 className="text-4xl font-semibold mt-6">Customer Reviews</h2>
 
         <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-          Explore the Digital Impact section filled with user testimonials that showcase how Nexto
-          has elevated projects across the digital spectrum
+          Explore the Digital Impact section filled with user testimonials that
+          showcase how Nexto has elevated projects across the digital spectrum
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">

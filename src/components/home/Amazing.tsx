@@ -26,8 +26,8 @@ const features = [
 export const Amazing: FC<Props> = ({ name }) => (
   <section className="mx-auto max-w-334">
     <div className="flex flex-col items-center justify-center text-center mt-20 ">
-      <p className="uppercase border border-gray-700 text-sm w-38 text-center rounded-full">
-        Features Explore
+      <p className="text-center text-[15px] font-normal leading-9 mx-auto uppercase border border-gray-700 w-45 rounded-full">
+        features explore
       </p>
       <h1 className="text-[38px] font-medium ">Amazing Features</h1>
       <p className="text-gray-500 text-sm mt-4 max-w-xl text-center">
@@ -62,9 +62,39 @@ export const Amazing: FC<Props> = ({ name }) => (
           </div>
         ))}
       </div>
-      <div className="text-center mt-10">
-        <button className="border border-gray-500 px-6 py-4 hover:bg-white hover:text-black transition duration-300 cursor-pointer">View All Features <span>→</span> </button>
+      <div className="flex justify-center mt-12">
+        <button
+          className="
+      group
+      flex items-center gap-2
+      rounded-lg
+      border border-gray-700
+      px-6 py-3
+      text-sm font-medium text-white
+      cursor-pointer
+      transition-all duration-300 ease-out
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-white
+      hover:bg-white
+      hover:text-black
+      hover:shadow-xl
+      active:scale-95
+    "
+        >
+          <span>View All Features</span>
+
+          <span
+            className="
+        inline-block
+        transition-transform duration-300
+        group-hover:translate-x-1
+      "
+          >
+            →
+          </span>
+        </button>
       </div>
     </div>
-  </section>  
+  </section>
 );
