@@ -4,8 +4,8 @@ import { Metadata, NextPage } from "next";
 import { Resources } from "./_components/Resources";
 
 export const metadata: Metadata = {
-  title: "About Page",
-  description: "This is a About page",
+  title: "Blog Page",
+  description: "This is a Blog page",
 };
 
 const blog: NextPage = () => {
