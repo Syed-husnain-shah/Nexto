@@ -6,77 +6,147 @@ type Props = {
 };
 
 export const Success: FC<Props> = () => (
-  <section className="bg-[#11151c] bg-[url('/image/bannerimg.svg')] bg-cover bg-center py-16 md:py-24 text-white">
-    <div className="max-w-7xl mx-auto px-6 text-center">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold max-w-xl mx-auto leading-snug">
+  <section
+    className="
+      w-full
+      overflow-hidden
+      bg-[#11151c]
+      bg-[url('/image/bannerimg.svg')]
+      bg-cover
+      bg-center
+      bg-no-repeat
+      py-16
+      text-white
+      sm:py-20
+      md:py-24
+      lg:py-28
+    "
+  >
+    <div className="mx-auto w-full max-w-7xl px-5 text-center sm:px-6 lg:px-8">
+
+      <h1
+        className="
+          mx-auto
+          max-w-2xl
+          text-2xl
+          font-semibold
+          leading-tight
+          sm:text-3xl
+          md:text-4xl
+          lg:text-5xl
+        "
+      >
         Your success story begins here Start Your Free Trial
       </h1>
 
-      <p className="text-sm sm:text-base text-gray-300 max-w-xl mx-auto mt-5">
-        Join Nexto today and experience seamless collaboration, innovation, and
-        success. Your digital journey begins now.
+      <p
+        className="
+          mx-auto
+          mt-5
+          max-w-2xl
+          text-sm
+          leading-6
+          text-gray-300
+          sm:text-base
+          sm:leading-7
+          md:mt-6
+        "
+      >
+        Join Nexto today and experience seamless collaboration, innovation,
+        and success. Your digital journey begins now.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
-        <div className="flex justify-center mt-12">
-          <button
-            className="
-      group
-      flex items-center gap-2
-      rounded-lg
-      border border-gray-700
-      px-6 py-3
-      text-sm font-medium text-white
-      cursor-pointer
-      transition-all duration-300 ease-out
-      hover:-translate-y-1
-      hover:scale-105
-      hover:border-white
-      hover:bg-white
-      hover:text-black
-      hover:shadow-xl
-      active:scale-95
-    "
-          >
-            <span>Signup Now</span>
-          </button>
-        </div>
-        <div className="flex justify-center mt-12">
-          <button
-            className="
-      group
-      flex items-center gap-2
-      rounded-lg
-      border border-gray-700
-      px-6 py-3
-      text-sm font-medium text-white
-      cursor-pointer
-      transition-all duration-300 ease-out
-      hover:-translate-y-1
-      hover:scale-105
-      hover:border-white
-      hover:bg-white
-      hover:text-black
-      hover:shadow-xl
-      active:scale-95
-    "
-          >
-            <span>Start Exploring</span>
+      <div
+        className="
+          mt-8
+          flex
+          w-full
+          flex-col
+          items-center
+          justify-center
+          gap-3
+          sm:mt-10
+          sm:flex-row
+          sm:gap-4
+        "
+      >
+        <button
+          className="
+            group
+            flex
+            w-full
+            max-w-xs
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            border
+            border-gray-700
+            px-6
+            py-3
+            text-sm
+            font-medium
+            text-white
+            transition-all
+            duration-300
+            ease-out
+            hover:-translate-y-1
+            hover:scale-105
+            hover:border-white
+            hover:bg-white
+            hover:text-black
+            hover:shadow-xl
+            active:scale-95
+            sm:w-auto
+          "
+        >
+          <span>Signup Now</span>
+        </button>
 
-            <span
-              className="
-        inline-block
-        transition-transform duration-300
-        group-hover:translate-x-1
-      "
-            >
-              →
-            </span>
-          </button>
-        </div>
+        <button
+          className="
+            group
+            flex
+            w-full
+            max-w-xs
+            items-center
+            justify-center
+            gap-2
+            rounded-lg
+            border
+            border-gray-700
+            px-6
+            py-3
+            text-sm
+            font-medium
+            text-white
+            transition-all
+            duration-300
+            ease-out
+            hover:-translate-y-1
+            hover:scale-105
+            hover:border-white
+            hover:bg-white
+            hover:text-black
+            hover:shadow-xl
+            active:scale-95
+            sm:w-auto
+          "
+        >
+          <span>Start Exploring</span>
 
-      
+          <IoMdArrowForward
+            className="
+              h-5
+              w-5
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
+          />
+        </button>
       </div>
+
     </div>
   </section>
 );
