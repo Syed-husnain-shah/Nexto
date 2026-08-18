@@ -72,7 +72,9 @@ export const Resources: FC<Props> = ({ name }) => (
       <p className="border border-gray-700 text-sm w-22 text-center rounded-full">
         Our Blogs
       </p>
-      <h1 className="text-[38px] font-medium ">Articles & Resources</h1>
+      <h1 className="text-3xl sm:text-4xl md:text-[38px] font-medium leading-tight">
+        Articles & Resources
+      </h1>
     </div>
     <main className="  px-6 mt-10 ">
       <div className="max-w-338 mx-auto grid gap-8 md:grid-cols-2">

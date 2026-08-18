@@ -23,7 +23,6 @@ export const Success: FC<Props> = () => (
     "
   >
     <div className="mx-auto w-full max-w-7xl px-5 text-center sm:px-6 lg:px-8">
-
       <h1
         className="
           mx-auto
@@ -52,8 +51,8 @@ export const Success: FC<Props> = () => (
           md:mt-6
         "
       >
-        Join Nexto today and experience seamless collaboration, innovation,
-        and success. Your digital journey begins now.
+        Join Nexto today and experience seamless collaboration, innovation, and
+        success. Your digital journey begins now.
       </p>
 
       <div
@@ -146,7 +145,6 @@ export const Success: FC<Props> = () => (
           />
         </button>
       </div>
-
     </div>
   </section>
 );
